@@ -1,30 +1,31 @@
-# Tareas: landing page de Álex Vega
 
-## Preparación
+# Tareas: portfolio molicgv.art
 
-- [x] 01. Alinear el plan y la especificación con `AGENTS.md`: los datos ficticios solo se usarán como mock y no se presentarán ni indexarán como información real.
-- [x] 02. Definir como estrategia que todo el contenido editable se incluya directamente en HTML; no usar JSON, JavaScript, frameworks ni herramientas de generación.
-- [x] 03. Armonizar `spec.md`: establecer `data/artist.json` como referencia editable y el HTML como contenido visible, sin carga dinámica.
-- [x] 04. Definir el esquema de `data/artist.json` para perfil, obras, presentaciones y contacto, con marca de contenido ficticio.
-- [x] 05. Preparar los datos ficticios de demostración para cada sección, sin usar información de personas reales.
-- [x] 06. Identificar recursos visuales: descartar la imagen genérica del repositorio y definir ilustraciones CSS con nombres accesibles por cada `visualKey`.
+## Documentación SDD
 
-## Construcción
+- [x] 01. Revisar reglas 4Geeks, documentos existentes, archivos HTML/CSS, JSON y fotografías.
+- [x] 02. Actualizar `AGENTS.md` para la identidad real, el uso de imágenes, tecnologías, accesibilidad, SEO y Microdata.
+- [x] 03. Actualizar `spec.md` con contenido confirmado, asignación de fotografías, límites y criterios de aceptación.
+- [x] 04. Actualizar `plan.md` y ordenar estas tareas antes de implementar.
 
-- [x] 07. Crear `data/artist.json` como referencia editable de contenido ficticio, sin convertirlo en fuente dinámica.
-- [x] 08. Completar `index.html` con landmarks semánticos y navegación a `#inicio`, `#sobre-mi`, `#trayectoria` y `#presentaciones`.
-- [x] 09. Escribir en el HTML los textos ficticios de portada, biografía, trayectoria, presentaciones y contacto, manteniéndolos coherentes con el JSON.
-- [x] 10. Crear `styles.css` con diseño mobile-first, Flexbox, foco visible y reglas responsivas.
-- [x] 11. Ajustar las secciones para que en escritorio se aproximen al alto de la ventana sin recortar contenido y puedan crecer cuando sea necesario.
-- [x] 12. Crear los visuales ficticios con CSS y usar sus descripciones como nombres accesibles; no representar imágenes genéricas como obras reales.
-- [x] 13. Crear metadatos coherentes con la demostración y evitar la indexación del perfil ficticio.
-- [x] 14. Añadir datos estructurados de Schema.org derivados del contenido visible, sin exponer mocks como información real indexable.
+## Implementación
 
-## Verificación
+- [x] 05. Conservar `data/artist.json` intacto; actualizarlo como referencia es opcional y no bloquea la web.
+- [ ] 06. Reemplazar en `index.html` la identidad por molicgv.art; añadir skip link, landmarks, un H1 y navegación por anclas.
+- [ ] 07. Construir el hero con `assets/images/portada.jpeg`, copy aprobado, alt y dimensiones intrínsecas.
+- [ ] 08. Construir Sobre mí con `assets/images/MG.jpg` y la presentación aprobada.
+- [ ] 09. Presentar `triptico-marino.jpg` y `playa.jpeg` en la galería y `textura-detalle_2.jpg` en proceso creativo, sin inventar títulos, fechas ni dimensiones.
+- [ ] 10. Mostrar RUST únicamente como proyecto en desarrollo, sin imagen ni afirmaciones añadidas.
+- [ ] 11. Mostrar que no hay exposiciones programadas y enlazar el Instagram confirmado.
+- [ ] 12. Añadir al footer los enlaces accesibles de Instagram, TikTok y correo con `mailto:`.
+- [ ] 13. Añadir Microdata Schema.org para datos reales y visibles; actualizar title y description, conservar `noindex` y omitir canonical.
+- [ ] 14. Sustituir la estética de demo en `styles.css` por «Galería marina», variables CSS, galería responsive, foco, hovers discretos y movimiento reducido.
 
-- [x] 15. Comprobar que todos los enlaces de navegación apuntan a IDs únicos y funcionan con teclado; verificar el foco visible.
-- [x] 16. Revisar textos alternativos, contraste, jerarquía de encabezados y recorrido por teclado.
-- [x] 17. Comprobar presentación móvil y escritorio, ausencia de desbordamiento horizontal y alturas de sección sin contenido recortado.
-- [x] 18. Comparar manualmente el contenido de `index.html` con `data/artist.json` para confirmar que coinciden.
-- [x] 19. Validar HTML, metadatos y Schema.org, y confirmar que el contenido ficticio se identifica como demostración y no se indexa como real.
-- [x] 20. Previsualizar `index.html` directamente en el navegador, sin ejecutar el servidor Flask ni añadir dependencias; registrar que no hubo captura automatizada de viewports.
+## Validación
+
+- [ ] 15. Confirmar que todo contenido visible reside en `index.html` y que no se carga ni procesa JSON.
+- [ ] 16. Verificar enlaces internos y externos, incluidos Instagram, TikTok y `mailto:`.
+- [ ] 17. Verificar carga, rutas, dimensiones y alt de las cinco imágenes sin modificar los originales.
+- [ ] 18. Revisar semántica, encabezados, teclado, skip link, foco, contraste y Microdata.
+- [ ] 19. Revisar responsive en móvil, tablet y escritorio; confirmar que no hay distorsión ni scroll horizontal.
+- [ ] 20. Confirmar que no se añadió JavaScript, frameworks, dependencias o herramientas de generación, y que `noindex` permanece sin canonical.
