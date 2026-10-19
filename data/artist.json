@@ -1,0 +1,75 @@
+{
+  "contentStatus": "fictional-demo",
+  "artist": {
+    "name": "Álex Vega",
+    "profession": "Ilustrador",
+    "tagline": "Pequeñas historias para mirar la ciudad de otra manera.",
+    "biography": "Ilustrador ficticio especializado en narrativa visual, portadas editoriales y campañas ilustradas. Su trabajo de muestra combina formas orgánicas y escenas urbanas.",
+    "location": "Valencia (ficticia)",
+    "portrait": {
+      "visualKey": "portrait-lines",
+      "alt": "Retrato ilustrado de un personaje ficticio, compuesto por formas vegetales y geométricas."
+    }
+  },
+  "works": [
+    {
+      "title": "Jardín de paso",
+      "category": "Ilustración editorial",
+      "medium": "Tinta digital y color plano",
+      "year": 2025,
+      "description": "Una escena ficticia sobre pequeños espacios verdes entre edificios.",
+      "image": {
+        "visualKey": "garden-passage",
+        "alt": "Ilustración ficticia de plantas que crecen entre edificios geométricos."
+      }
+    },
+    {
+      "title": "La ciudad en pausa",
+      "category": "Portada editorial",
+      "medium": "Grafito y color digital",
+      "year": 2024,
+      "description": "Una portada de muestra que imagina una plaza tranquila al amanecer.",
+      "image": {
+        "visualKey": "city-pause",
+        "alt": "Plaza urbana ficticia al amanecer, con una figura leyendo."
+      }
+    },
+    {
+      "title": "Pequeños futuros",
+      "category": "Campaña ilustrada",
+      "medium": "Collage digital y color plano",
+      "year": 2026,
+      "description": "Una campaña ficticia que reúne objetos cotidianos transformados en paisajes.",
+      "image": {
+        "visualKey": "small-futures",
+        "alt": "Composición ficticia de objetos cotidianos convertidos en un paisaje."
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "title": "Formas que cuentan",
+      "date": "2026-11-14",
+      "venue": "Espacio Lumen (ficticio)",
+      "location": "Valencia (ficticia)",
+      "description": "Encuentro de muestra sobre ilustración narrativa."
+    },
+    {
+      "title": "Mundos de bolsillo",
+      "date": "2026-12-05",
+      "venue": "Sala Papel (ficticia)",
+      "location": "Madrid (ficticia)",
+      "description": "Presentación ficticia de proyectos editoriales e ilustración."
+    }
+  ],
+  "contact": {
+    "email": "hola@alexvega.example",
+    "socialProfiles": [
+      {
+        "network": "Red social de demostración",
+        "label": "@alexvega-demo",
+        "url": "https://social.example/alexvega-demo"
+      }
+    ]
+  }
+}
