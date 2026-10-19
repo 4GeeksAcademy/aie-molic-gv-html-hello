@@ -29,14 +29,17 @@
 	<main id="contenido">
 		<section id="inicio" class="section hero" aria-labelledby="inicio-title">
 			<div class="hero-copy">
-				<p class="eyebrow" itemprop="jobTitle">Pintura acrílica texturizada</p>
+				<p class="eyebrow" itemprop="knowsAbout">Pintura acrílica texturizada</p>
 				<h1 id="inicio-title" itemprop="alternateName">molicgv.art</h1>
 				<p class="hero-tagline">Arte inspirado en el mar, creado a través de la textura.</p>
 				<p class="hero-intro">Pintura acrílica, volumen y paisajes marinos que buscan trasladar al lienzo la fuerza y la calma del océano.</p>
 				<a class="text-link hero-link" href="#trayectoria">Descubrir las obras <span aria-hidden="true">↓</span></a>
 			</div>
 			<figure class="hero-image image-frame">
-				<img src="assets/images/portada.jpeg" width="1512" height="1512" alt="Obra de pintura acrílica texturizada para la portada del portfolio." fetchpriority="high" decoding="async">
+				<picture>
+					<source type="image/webp" srcset="assets/images/portada-768.webp 768w, assets/images/portada-1512.webp 1512w" sizes="(min-width: 64rem) 43vw, (min-width: 48rem) 46vw, 100vw">
+					<img src="assets/images/portada.jpeg" width="1512" height="1512" alt="Obra de pintura acrílica texturizada para la portada del portfolio." fetchpriority="high" decoding="async">
+				</picture>
 			</figure>
 		</section>
 
@@ -48,7 +51,10 @@
 				<p class="about-text" itemprop="description">Exploro la pintura acrílica texturizada como forma de representar el movimiento del agua, la luz y los paisajes marinos. A través de diferentes materiales y relieves, experimento con las posibilidades de cada lienzo.</p>
 			</div>
 			<figure class="about-image image-frame">
-				<img src="assets/images/MG.jpg" width="1000" height="1000" alt="Fotografía de Mónica Gómez, artista de molicgv.art." itemprop="image" loading="lazy" decoding="async">
+				<picture>
+					<source type="image/webp" srcset="assets/images/MG-640.webp 640w, assets/images/MG-1000.webp 1000w" sizes="(min-width: 48rem) 32rem, 100vw">
+					<img src="assets/images/MG.jpg" width="1000" height="1000" alt="Fotografía de Mónica Gómez, artista de molicgv.art." itemprop="image" loading="lazy" decoding="async">
+				</picture>
 			</figure>
 		</section>
 
@@ -60,28 +66,35 @@
 			<div class="work-grid">
 				<figure class="work-item work-item--triptych" itemprop="subjectOf" itemscope itemtype="https://schema.org/VisualArtwork">
 					<div class="image-frame">
-						<img src="assets/images/triptico-marino.jpg" width="3090" height="2091" alt="Tríptico marino compuesto por tres lienzos con una composición texturizada." itemprop="image" loading="lazy" decoding="async">
+						<picture>
+							<source type="image/webp" srcset="assets/images/triptico-marino-1200.webp 1200w, assets/images/triptico-marino-2000.webp 2000w, assets/images/triptico-marino-3090.webp 3090w" sizes="(min-width: 48rem) 60vw, 100vw">
+							<img src="assets/images/triptico-marino.jpg" width="3090" height="2091" alt="Tríptico marino compuesto por tres lienzos con una composición texturizada." itemprop="image" loading="lazy" decoding="async">
+						</picture>
 					</div>
 					<figcaption>
 						<h3>Tríptico marino</h3>
 						<p itemprop="description">Obra compuesta por tres lienzos con una composición marina texturizada.</p>
-						<span class="visually-hidden" itemprop="artform">Pintura</span>
 					</figcaption>
 				</figure>
 				<figure class="work-item work-item--sea" itemprop="subjectOf" itemscope itemtype="https://schema.org/VisualArtwork">
 					<div class="image-frame">
-						<img src="assets/images/playa.jpeg" width="900" height="697" alt="Obra pictórica individual inspirada en el mar." itemprop="image" loading="lazy" decoding="async">
+						<picture>
+							<source type="image/webp" srcset="assets/images/playa-480.webp 480w, assets/images/playa-900.webp 900w" sizes="(min-width: 48rem) 40vw, 100vw">
+							<img src="assets/images/playa.jpeg" width="900" height="697" alt="Obra pictórica individual inspirada en el mar." itemprop="image" loading="lazy" decoding="async">
+						</picture>
 					</div>
 					<figcaption>
 						<h3>Obra inspirada en el mar</h3>
 						<p itemprop="description">Una pintura individual relacionada con el mar.</p>
-						<span class="visually-hidden" itemprop="artform">Pintura</span>
 					</figcaption>
 				</figure>
 			</div>
 			<div class="process-block">
 				<figure class="process-image image-frame">
-					<img src="assets/images/textura-detalle_2.jpg" width="511" height="561" alt="Detalle de textura y relieves en una obra de pintura acrílica." loading="lazy" decoding="async">
+					<picture>
+						<source type="image/webp" srcset="assets/images/textura-detalle_2-511.webp 511w" sizes="(min-width: 48rem) 42vw, 100vw">
+						<img src="assets/images/textura-detalle_2.jpg" width="511" height="561" alt="Detalle de textura y relieves en una obra de pintura acrílica." loading="lazy" decoding="async">
+					</picture>
 				</figure>
 				<div class="process-copy">
 					<p class="eyebrow">Proceso creativo</p>

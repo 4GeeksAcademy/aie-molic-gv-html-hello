@@ -55,7 +55,9 @@ La navegación incluirá Inicio, Sobre mí, Trayectoria y Próximas presentacion
 - `assets/images/triptico-marino.jpg`: 3090 × 2091, galería.
 - `assets/images/playa.jpeg`: 900 × 697, galería.
 - `assets/images/textura-detalle_2.jpg`: 511 × 561, proceso creativo.
-- Usa `width` y `height` con estas dimensiones, además de `loading="lazy"` para imágenes fuera del hero cuando corresponda. No distorsiones las proporciones.
+- Conserva estos JPEG originales como fallback y ofrece derivados WebP mediante `<picture>`, `srcset` y `sizes` cuando haya variantes responsive.
+- Usa `width` y `height` según las dimensiones de la imagen fallback, `fetchpriority="high"` para el hero y `loading="lazy"` para imágenes bajo el contenido inicial. No distorsiones las proporciones.
+- Los derivados actuales son `portada-768.webp`, `portada-1512.webp`, `MG-640.webp`, `MG-1000.webp`, `triptico-marino-1200.webp`, `triptico-marino-2000.webp`, `triptico-marino-3090.webp`, `playa-480.webp`, `playa-900.webp` y `textura-detalle_2-511.webp`.
 
 ## Requisitos de diseño y tecnología
 
@@ -87,6 +89,8 @@ La navegación incluirá Inicio, Sobre mí, Trayectoria y Próximas presentacion
 
 - Se implementarán datos estructurados con Microdata HTML, no JSON-LD.
 - Se usarán tipos y propiedades adecuados como `Person` y `VisualArtwork` solo para información real y visible.
+- La especialidad artística se representa mediante `knowsAbout`; `jobTitle` se reserva para una ocupación expresada como puesto profesional.
+- La propiedad `Person.name` contiene únicamente el nombre «Mónica Gómez», sin saludos ni texto editorial.
 - Los datos estructurados deben coincidir con el contenido visible y no incluir títulos, fechas, dimensiones ni otras afirmaciones no confirmadas.
 
 ## Criterios de aceptación
@@ -94,12 +98,12 @@ La navegación incluirá Inicio, Sobre mí, Trayectoria y Próximas presentacion
 - [ ] La identidad visible es molicgv.art / Mónica Gómez y no quedan datos ni contenidos de la demo anterior.
 - [ ] La navegación tiene Inicio, Sobre mí, Trayectoria y Próximas presentaciones, con anclas válidas.
 - [ ] El hero utiliza `portada.jpeg`; Sobre mí utiliza `MG.jpg`; la galería muestra `triptico-marino.jpg` y `playa.jpeg`; el proceso usa `textura-detalle_2.jpg`.
-- [ ] Las imágenes usan rutas relativas, alt descriptivo y dimensiones intrínsecas; los originales no se modifican.
+- [ ] Las imágenes ofrecen WebP con JPEG fallback, usan `srcset`/`sizes` cuando hay variantes, rutas relativas, alt y dimensiones correctas; los originales no se modifican.
 - [ ] No se muestran títulos, fechas, dimensiones, credenciales, eventos ni trayectoria profesional no confirmados; RUST aparece únicamente como proyecto en desarrollo sin imagen.
 - [ ] Próximas presentaciones indica que no hay exposiciones programadas e incluye el Instagram confirmado.
 - [ ] Footer enlaza Instagram, TikTok y correo usando URLs confirmadas y `mailto:`.
 - [ ] El diseño usa la paleta «Galería marina», variables CSS, composición responsive, imágenes sin distorsión y movimiento reducido.
 - [ ] El HTML tiene un H1, landmarks semánticos, enlace para saltar al contenido, foco visible y navegación por teclado.
 - [ ] El título y la descripción son precisos; no se añade canonical y se conserva `noindex` hasta consulta expresa.
-- [ ] Microdata Schema.org refleja únicamente información visible y confirmada; no se usa JSON-LD ni JavaScript.
+- [ ] Microdata Schema.org refleja únicamente información visible y confirmada; la especialidad usa `knowsAbout`, no se usa JSON-LD ni JavaScript.
 - [ ] HTML, CSS, enlaces, carga de fotos, accesibilidad y diseño responsive se revisan; no se declaran pruebas no ejecutadas.

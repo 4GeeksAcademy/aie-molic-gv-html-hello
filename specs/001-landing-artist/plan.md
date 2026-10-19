@@ -22,7 +22,7 @@ No modificar `assets/images/*`, `server.py`, `README*` ni otros archivos. No hac
 3. **HTML:** sustituir la identidad de la demo anterior por el portfolio en `index.html`: skip link, navegación por anclas, hero con `portada.jpeg`, Sobre mí con `MG.jpg`, galería con el tríptico y `playa.jpeg`, proceso con `textura-detalle_2.jpg`, mensaje de eventos y footer con enlaces de contacto.
 4. **Microdata y SEO:** marcar solo datos reales y visibles con Microdata Schema.org. Actualizar title y description; no añadir canonical y conservar el `noindex` actual hasta autorización expresa.
 5. **CSS:** implementar la paleta marina en variables `:root`, tipografía local, galería responsive, imágenes sin distorsión, espaciado editorial, hovers discretos, foco visible y `prefers-reduced-motion`.
-6. **Validación:** comprobar que el HTML es autocontenido, enlaces, rutas y carga de imágenes, estructura y Microdata, navegación por teclado, contraste y responsive en tamaños móvil, tablet y escritorio. No comparar ni cargar el JSON. No instalar dependencias; usar `server.py` solo si ya puede arrancar, sin convertirlo en dependencia.
+6. **Validación:** comprobar que el HTML es autocontenido, enlaces, rutas y carga de imágenes WebP/JPEG, estructura y Microdata, navegación por teclado, contraste y responsive en tamaños móvil, tablet y escritorio. No comparar ni cargar el JSON. No instalar dependencias; usar `server.py` solo si ya puede arrancar, sin convertirlo en dependencia.
 
 ## Datos y límites
 
@@ -34,4 +34,12 @@ No modificar `assets/images/*`, `server.py`, `README*` ni otros archivos. No hac
 
 ## Criterio de cierre
 
-La página muestra exclusivamente contenido aprobado, los cinco recursos cargan desde sus rutas originales, la presentación es responsive y accesible, los metadatos no inventan dominio y la política `noindex` se conserva. No se incorporan JavaScript, frameworks, dependencias ni herramientas de generación.
+La página muestra exclusivamente contenido aprobado, las cinco fotos tienen WebP y JPEG fallback desde sus rutas relativas, la presentación es responsive y accesible, los metadatos no inventan dominio y la política `noindex` se conserva. No se incorporan JavaScript, frameworks, dependencias ni herramientas de generación.
+
+## Estado de cierre
+
+- Implementado: diez derivados WebP responsive, `<picture>`/`srcset`/`sizes`, JPEG fallback, prioridad de carga del hero y lazy loading bajo el contenido inicial.
+- Implementado: Microdata con `knowsAbout` para la especialidad y sin `jobTitle` ni `artform` oculto.
+- Verificado automáticamente: decodificación de variantes, dimensiones/proporciones, rutas, anclas internas, JPEG fallbacks, `alt`, dimensiones HTML, un H1, Microdata básico, `noindex` y ausencia de JavaScript/canonical.
+- Hallazgo pendiente: `Person.name` toma el texto completo «Hola, soy Mónica Gómez.»; corregirlo a «Mónica Gómez» requiere una modificación HTML posterior.
+- Pendiente de revisión manual: recorrido con teclado/lector de pantalla, inspección visual en móvil/tablet/escritorio y respuesta HTTP de los enlaces externos. La vista previa se abrió localmente, pero no se generaron capturas de viewport.
